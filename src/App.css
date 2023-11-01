@@ -1,45 +1,53 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+.container-fluid {
+  padding: 20px;
 }
 
-.App {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.search-bar {
+.input {
   margin-bottom: 20px;
 }
 
-.search-bar input {
+input[type="text"] {
+  width: 70%;
   padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
+  font-size: 1rem;
+  border: 2px solid #007bff; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+  transition: border-color 0.3s ease; 
 }
 
-.search-bar button {
+input[type="text"]:focus {
+  border-color: #0056b3; 
+  outline: none; 
+}
+
+.btn {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
+  font-size: 1rem;
+  background-color: #007bff; 
+  color: #fff; 
   border: none;
+  border-radius: 5px; 
   cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 
-.photo-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+.btn:hover {
+  background-color: #0056b3; 
 }
 
-img {
-  width: 100%;
-  height: auto;
+.img-thumbnail {
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
